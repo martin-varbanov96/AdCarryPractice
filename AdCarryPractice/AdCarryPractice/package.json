@@ -1,0 +1,10 @@
+{
+  "name": "AdCarryPractice",
+  "version": "0.0.0",
+  "description": "AdCarryPractice",
+  "main": "app.js",
+  "author": {
+    "name": "hp",
+    "email": ""
+  }
+}
