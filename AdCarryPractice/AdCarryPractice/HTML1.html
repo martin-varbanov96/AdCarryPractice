@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -7,17 +7,20 @@
     <link href="css\Stylesheet1.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="mainMenu">
-        <input type="text" class="menu" value="Enter width: " id="setWidth" />
-        <input type="text" class="menu" value="Enter height: " id="setHeight" />
-        <input type="text" class="menu" value="Enter speed: " id="setSpeed" />
-        <button id="menuButton">Start game</button>
+    <div id="hamburgerPane">            
+        <img src="img/hamburger.png" id="hamburger"/>
     </div>
+    <nav id="mainMenu">    
+        <input type="text" class="menu" value="Enter width: " id="setWidth" onblur="if(this.value == ''){this.value = 'Enter width: ' }" onfocus="if(this.value == 'Enter width: '){this.value = '' }" />
+        <input type="text" class="menu" value="Enter height: " id="setHeight" onblur="if(this.value == ''){this.value = 'Enter height: ' }" onfocus="if(this.value == 'Enter height: '){this.value = '' }"/>
+        <input type="text" class="menu" value="Enter speed: " id="setSpeed" onblur="if(this.value == ''){this.value = 'Enter speed: ' }" onfocus="if(this.value == 'Enter speed: '){this.value = '' }"/>
+        <button id="menuButton">Start game</button>
+        <div id="scoreBoard">
+            <div id="score">0</div>
+        </div>
+    </nav>
     <div id="main">
         <div id="target"></div>       
-    </div>
-    <div id="scoreBoard">
-        <div id="score">0</div>
     </div>
     <script src="js\jquery-1.11.3.min.js"></script>
     <script src="js\jquery-ui.min.js"></script>
